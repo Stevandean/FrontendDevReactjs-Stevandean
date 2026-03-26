@@ -1,73 +1,121 @@
-# React + TypeScript + Vite
+# 🍜 Restaurant Finder App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern restaurant listing web app built with **React + TypeScript + Tailwind CSS**.  
+Users can explore restaurants, filter results, and view detailed information with reviews.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Features
 
-## React Compiler
+✨ What you can do in this app:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🔍 Browse restaurant list
+- 🎯 Filter by:
+  - Open Now
+  - Price Range
+  - Category
+- 📄 View detailed restaurant page
+- ⭐ See customer reviews
+- 🗺️ Integrated Google Maps location
+- ➕ Load More (pagination UX)
+- 💀 Skeleton loading (better UX)
+- 📱 Fully responsive design
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- ⚛️ React (Vite)
+- 🟦 TypeScript
+- 🎨 Tailwind CSS
+- 🌐 MockAPI (for fake backend)
+- 🔀 React Router DOM
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## ⚙️ Environment
+
+| Tool | Version |
+|------|--------|
+| Node.js | >= 18.x |
+| React | ^18.x |
+| Vite | ^5.x |
+| npm | >= 9.x |
+
+---
+
+## 📦 Installation & Setup
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/USERNAME/REPO_NAME.git
+cd REPO_NAME
+2. Install Dependencies
+
+Using npm:
+
+npm install
+
+or using yarn:
+
+yarn install
+3. Run Project
+npm run dev
+
+or
+
+yarn dev
+4. Open in Browser
+http://localhost:5173
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📁 Project Structure
+```bash
+src/
+│
+├── Components/
+│   ├── FilterBar.tsx
+│   ├── RestaurantCard.tsx
+│   └── SkeletonCard.tsx
+│
+├── pages/
+│   ├── Home.tsx
+│   └── Detail.tsx
+│
+├── services/
+│   └── api.ts
+│
+├── types/
+│   └── restaurant.ts
+│
+└── App.tsx
 ```
+
+## 🎯 Key Highlights
+
+- Clean and modular architecture
+- Separation between UI & data fetching
+- Combination of:
+- Server-side filtering (category)
+- Client-side filtering (price & open status)
+- Optimized UX with:
+1. Skeleton loading
+2. Load more pagination
+3. Reusable components
+
+🚀 Future Improvements
+🔎 Search functionality
+❤️ Favorite / Wishlist feature
+✍️ Add review form
+🔐 Authentication system
+🌍 Real backend integration
+
+## 👨‍💻 Author
+Made with ❤️ by Stevandean
+
+## 📄 License
+This project is for educational / technical test purposes.
+
+## 🌐 Live Demo
+peaceful-muffin-e398cc.netlify.app
