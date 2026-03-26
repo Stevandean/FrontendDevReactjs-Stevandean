@@ -118,4 +118,4 @@ Made with ❤️ by Stevandean
 This project is for educational / technical test purposes.
 
 ## 🌐 Live Demo
-peaceful-muffin-e398cc.netlify.app
+https://restourant-app-stevandean.netlify.app/
